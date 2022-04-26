@@ -81,6 +81,11 @@ class ModelExtensionShippingParcelPro extends Model {
             $quote_data = array_merge($quote_data, $this->getIdQuotes('2928', $language_id, $sub_total, $weight, $customer_geozones));
         }
 
+        // Intrapost, Pickup Location
+        if ($this->config->get('parcel_pro_type_id_9_status') and is_array($this->config->get('parcel_pro_type_id_9_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('9', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+
         // PostNL, Brievenbuspakje
         if ($this->config->get('parcel_pro_type_id_2928_status') and is_array($this->config->get('parcel_pro_type_id_2928_rule'))) {
             $quote_data = array_merge($quote_data, $this->getIdQuotes('2928', $language_id, $sub_total, $weight, $customer_geozones));

@@ -82,6 +82,7 @@ class ControllerExtensionShippingParcelPro extends Controller {
         $data['tab_type_id_3385'] = $this->language->get('tab_type_id_3385');
         $data['tab_type_id_4940'] = $this->language->get('tab_type_id_4940');
         $data['tab_type_id_3533'] = $this->language->get('tab_type_id_3533');
+        $data['tab_type_id_9'] = $this->language->get('tab_type_id_9');
         $data['tab_type_id_DFY'] = $this->language->get('tab_type_id_DFY');
         $data['tab_type_id_Europack'] = $this->language->get('tab_type_id_Europack');
         $data['tab_type_id_Europlus'] = $this->language->get('tab_type_id_Europlus');
@@ -204,6 +205,7 @@ class ControllerExtensionShippingParcelPro extends Controller {
         array_push($options,"65");//UPS, Express Saver
         array_push($options,"dc");//Fadello
         array_push($options,"2928");//PostNL (ex VSP), Brievenbuspakje
+        array_push($options,"9");//Intrapost parcelpunt
 
         for ($i = 0; $i < count($options); $i++) {
 

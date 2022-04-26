@@ -18,6 +18,7 @@ array_push($options,"3189");// PostNL, Pakket + handtekening voor ontvangst, ook
 array_push($options,"3385");// PostNL, Alleen Huisadres
 array_push($options,"4940");// PostNL, Pakket buitenland
 array_push($options,"3533");//PostNL, Pakjegemak
+array_push($options,"9");   //Intrapost, Pickup Location
 array_push($options,"DFY");//DHL, DFY
 array_push($options,"Europlus");//DHL, EUROPLUS
 array_push($options,"Europack");//DHL, EUROPACK
@@ -246,6 +247,7 @@ array_push($options,"2928");//PostNL (ex VSP), Brievenbuspakje
     var count_type_id_65_rule = <?php echo isset($count_type_id_65) ? $count_type_id_65 : '0'; ?>;
     var count_type_id_dc_rule = <?php echo isset($count_type_id_dc) ? $count_type_id_dc : '0'; ?>;
     var count_type_id_2928_rule = <?php echo isset($count_type_id_2928) ? $count_type_id_2928 : '0'; ?>;
+    var count_type_id_9_rule = <?php echo isset($count_type_id_9) ? $count_type_id_9 : '0'; ?>;
 
 
 function addRule_1(type_id, table_id) {
@@ -362,6 +364,10 @@ function addRule_1(type_id, table_id) {
         case "parcel_pro_type_id_dc_rule":
             rulercounter = count_type_id_dc_rule;
             count_type_id_dc_rule++;
+            break;
+        case "parcel_pro_type_id_9_rule":
+            rulercounter = count_type_id_9_rule;
+            count_type_id_9_rule++;
             break;
         case "parcel_pro_type_id_2928_rule":
             rulercounter = count_type_id_2928_rule;

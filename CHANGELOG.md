@@ -4,9 +4,16 @@ Changelog
 ParcelPro Shipment module voor Opencart 2.2.x
 Geschikt voor Opencart 2.2.x
 
+
+## V.1.4.0
+
+####  Nieuwe functionaliteiten
+- Intrapost pakketpunten toegevoegd
+
+
 ## V.1.3.0
 
-#### Fixes 
+#### Fixes
 - VSP is nu hernoemd naar PostNL
 
 
