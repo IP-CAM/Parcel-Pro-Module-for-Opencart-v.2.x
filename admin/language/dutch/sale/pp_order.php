@@ -30,7 +30,6 @@ $_['text_type_id_3189']     = 'PostNL, Pakket + handtekening voor ontvangst, ook
 $_['text_type_id_3385']   = 'PostNL, Alleen Huisadres';
 $_['text_type_id_4940']     = 'PostNL, Pakket buitenland';
 $_['text_type_id_3533']     = 'PostNL, Pakjegemak';
-$_['text_type_id_9']   = 'Intrapost, Pickup Location';
 $_['text_type_id_DFY']    = 'DHL, DFY';
 $_['text_type_id_Europlus']    = 'DHL, EUROPLUS';
 $_['text_type_id_Parcelshop']    = 'DHL, Parcelshop';
@@ -45,6 +44,13 @@ $_['text_type_id_228']    = 'DPD, DPD 12:00, zaterdag';
 $_['text_type_id_237']    = 'DPD, DPD 12:00, rembours';
 $_['text_type_id_350']    = 'DPD, DPD 8:30';
 $_['text_type_id_352']    = 'DPD, 8:30, rembours';
+$_['text_type_id_1']      = 'Intrapost, StandardParcel';
+$_['text_type_id_2']      = 'Intrapost, InsuredParcel';
+$_['text_type_id_3']      = 'Intrapost, RegisteredParcel';
+$_['text_type_id_6']      = 'Intrapost, StandardParcelStatedAddress';
+$_['text_type_id_7']      = 'Intrapost, StandardParcelStatedAddressSignature';
+$_['text_type_id_8']      = 'Intrapost, MailboxParcel';
+$_['text_type_id_9']      = 'Intrapost, ParcelViaPickupLocation';
 $_['text_copyright']     = '<div style="text-align: center" class="help">' . $_['heading_title'] . ' ' . $version . ' &copy; ' . date("Y") . '</div>';
 
 // Column

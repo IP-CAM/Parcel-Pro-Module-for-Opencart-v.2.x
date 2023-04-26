@@ -82,7 +82,6 @@ class ControllerExtensionShippingParcelPro extends Controller {
         $data['tab_type_id_3385'] = $this->language->get('tab_type_id_3385');
         $data['tab_type_id_4940'] = $this->language->get('tab_type_id_4940');
         $data['tab_type_id_3533'] = $this->language->get('tab_type_id_3533');
-        $data['tab_type_id_9'] = $this->language->get('tab_type_id_9');
         $data['tab_type_id_DFY'] = $this->language->get('tab_type_id_DFY');
         $data['tab_type_id_Europack'] = $this->language->get('tab_type_id_Europack');
         $data['tab_type_id_Europlus'] = $this->language->get('tab_type_id_Europlus');
@@ -105,6 +104,13 @@ class ControllerExtensionShippingParcelPro extends Controller {
         $data['tab_type_id_65'] = $this->language->get('tab_type_id_65');
         $data['tab_type_id_dc'] = $this->language->get('tab_type_id_dc');
         $data['tab_type_id_2928'] = $this->language->get('tab_type_id_2928');
+        $data['tab_type_id_1'] = $this->language->get('tab_type_id_1'); //Intrapost opties
+        $data['tab_type_id_2'] = $this->language->get('tab_type_id_2');
+        $data['tab_type_id_3'] = $this->language->get('tab_type_id_3');
+        $data['tab_type_id_6'] = $this->language->get('tab_type_id_6');
+        $data['tab_type_id_7'] = $this->language->get('tab_type_id_7');
+        $data['tab_type_id_8'] = $this->language->get('tab_type_id_8');
+        $data['tab_type_id_9'] = $this->language->get('tab_type_id_9'); //Intrapost opties
 
         $data['column_general'] = $this->language->get('column_general');
         $data['column_geo_zone'] = $this->language->get('column_geo_zone');
@@ -205,7 +211,13 @@ class ControllerExtensionShippingParcelPro extends Controller {
         array_push($options,"65");//UPS, Express Saver
         array_push($options,"dc");//Fadello
         array_push($options,"2928");//PostNL (ex VSP), Brievenbuspakje
-        array_push($options,"9");//Intrapost parcelpunt
+        array_push($options,"1");//Intrapost, StandardParcel
+        array_push($options,"2");//Intrapost, InsuredParcel
+        array_push($options,"3");//Intrapost, RegisteredParcel
+        array_push($options,"6");//Intrapost, StandardParcelStatedAddress
+        array_push($options,"7");//Intrapost, StandardParcelStatedAddressSignature
+        array_push($options,"8");//Intrapost, MailboxParcel
+        array_push($options,"9");//Intrapost, ParcelViaPickupLocation
 
         for ($i = 0; $i < count($options); $i++) {
 

@@ -72,6 +72,8 @@ class Parcelpro {
         if(in_array($shipping_code[5], $FADELLO)) $carrier = 'Fadello';
         $VSP = array(2928);
         if(in_array($shipping_code[5], $VSP)) $carrier = 'PostNL';
+        $Intrapost = array(1,2,3,6,7,8,9);
+        if(in_array($shipping_code[5], $Intrapost)) $carrier = 'Intrapost';
 
 
         $handtekening_bij_aflevering = false;

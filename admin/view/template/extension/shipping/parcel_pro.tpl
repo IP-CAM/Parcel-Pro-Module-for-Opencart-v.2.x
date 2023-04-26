@@ -18,7 +18,6 @@ array_push($options,"3189");// PostNL, Pakket + handtekening voor ontvangst, ook
 array_push($options,"3385");// PostNL, Alleen Huisadres
 array_push($options,"4940");// PostNL, Pakket buitenland
 array_push($options,"3533");//PostNL, Pakjegemak
-array_push($options,"9");   //Intrapost, Pickup Location
 array_push($options,"DFY");//DHL, DFY
 array_push($options,"Europlus");//DHL, EUROPLUS
 array_push($options,"Europack");//DHL, EUROPACK
@@ -40,6 +39,14 @@ array_push($options,"54");//UPS, Express Plus
 array_push($options,"65");//UPS, Express Saver
 array_push($options,"dc");//Fadello
 array_push($options,"2928");//PostNL (ex VSP), Brievenbuspakje
+array_push($options,"1");// Intrapost, StandardParcel
+array_push($options,"2");// Intrapost, InsuredParcel
+array_push($options,"3");// Intrapost, RegisteredParcel
+array_push($options,"6");// Intrapost, StandardParcelStatedAddress
+array_push($options,"7");// Intrapost, StandardParcelStatedAddressSignature
+array_push($options,"8");// Intrapost, MailboxParcel
+array_push($options,"9");// Intrapost, ParcelViaPickupLocation
+
 ?>
 <div id="content">
     <div class="page-header">
@@ -247,6 +254,12 @@ array_push($options,"2928");//PostNL (ex VSP), Brievenbuspakje
     var count_type_id_65_rule = <?php echo isset($count_type_id_65) ? $count_type_id_65 : '0'; ?>;
     var count_type_id_dc_rule = <?php echo isset($count_type_id_dc) ? $count_type_id_dc : '0'; ?>;
     var count_type_id_2928_rule = <?php echo isset($count_type_id_2928) ? $count_type_id_2928 : '0'; ?>;
+    var count_type_id_1_rule = <?php echo isset($count_type_id_1) ? $count_type_id_1 : '0'; ?>;
+    var count_type_id_2_rule = <?php echo isset($count_type_id_2) ? $count_type_id_2 : '0'; ?>;
+    var count_type_id_3_rule = <?php echo isset($count_type_id_3) ? $count_type_id_3 : '0'; ?>;
+    var count_type_id_6_rule = <?php echo isset($count_type_id_6) ? $count_type_id_6 : '0'; ?>;
+    var count_type_id_7_rule = <?php echo isset($count_type_id_7) ? $count_type_id_7 : '0'; ?>;
+    var count_type_id_8_rule = <?php echo isset($count_type_id_8) ? $count_type_id_8 : '0'; ?>;
     var count_type_id_9_rule = <?php echo isset($count_type_id_9) ? $count_type_id_9 : '0'; ?>;
 
 
@@ -365,13 +378,37 @@ function addRule_1(type_id, table_id) {
             rulercounter = count_type_id_dc_rule;
             count_type_id_dc_rule++;
             break;
-        case "parcel_pro_type_id_9_rule":
-            rulercounter = count_type_id_9_rule;
-            count_type_id_9_rule++;
-            break;
         case "parcel_pro_type_id_2928_rule":
             rulercounter = count_type_id_2928_rule;
             count_type_id_2928_rule++;
+            break;
+        case "parcel_pro_type_id_1_rule":
+            rulercounter = count_type_id_1_rule;
+            count_type_id_1_rule++;
+            break;
+        case "parcel_pro_type_id_2_rule":
+            rulercounter = count_type_id_2_rule;
+            count_type_id_2_rule++;
+            break;
+        case "parcel_pro_type_id_3_rule":
+            rulercounter = count_type_id_3_rule;
+            count_type_id_3_rule++;
+            break;
+        case "parcel_pro_type_id_6_rule":
+            rulercounter = count_type_id_6_rule;
+            count_type_id_6_rule++;
+            break;
+        case "parcel_pro_type_id_7_rule":
+            rulercounter = count_type_id_7_rule;
+            count_type_id_7_rule++;
+            break;
+        case "parcel_pro_type_id_8_rule":
+            rulercounter = count_type_id_8_rule;
+            count_type_id_8_rule++;
+            break;
+        case "parcel_pro_type_id_9_rule":
+            rulercounter = count_type_id_9_rule;
+            count_type_id_9_rule++;
             break;
     }
 

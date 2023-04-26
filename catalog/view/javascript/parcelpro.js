@@ -36,9 +36,9 @@ function AddressIsParcelshop(data) {
         jQuery(label).html(firstname + " " + lastname + " <strong>" + priceHtml + "<strong>");
         return true;
     }
-    if (firstname == "Intrapost Pakketpunt") {
-        var label = jQuery('label[for="s_method_parcelpro_intrapost_parcelshop"]');
-        var price = jQuery('span', label);
+    if (firstname == "Intrapost Parcel") {
+        var label = jQuery('label[for="s_method_parcelpro_tab_type_id_9"]');
+        var price = Jquery('span', label);
         var priceHtml = jQuery('<div>').append(price.clone()).html();
         jQuery(label).html(firstname + " " + lastname + " <strong>" + priceHtml + "<strong>");
         return true;
@@ -83,9 +83,9 @@ jQuery(document).ready(function () {
             jQuery('#modal').show();
             jQuery('#afhaalpunt_frame').attr('src', ParcelProKiezerUrl() + '&carrier=DHL');
         }
-        if (value === 'parcel_pro.parcel_pro_type_id_9') {
+        if (value ==='parcel_pro.parcel_pro_type_id_9'){
             jQuery('#modal').show();
-            jQuery('#afhaalpunt_frame').attr('src', ParcelProKiezerUrl() + '&carrier=DHL');
+            jQuery('#afhaalpunt_frame').attr('src', ParcelProKiezerUrl() + '&carrier=Intrapost');
         }
     });
 });

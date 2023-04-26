@@ -60,7 +60,6 @@ $_['tab_type_id_3189']   = 'PostNL, Pakket + handtekening voor ontvangst, ook bi
 $_['tab_type_id_3385'] = 'PostNL, Alleen Huisadres';
 $_['tab_type_id_4940']   = 'PostNL, Pakket buitenland';
 $_['tab_type_id_3533']   = 'PostNL, Pakjegemak';
-$_['tab_type_id_9']   = 'Intrapost, Pickup Location';
 $_['tab_type_id_DFY']  = 'DHL, DFY';
 $_['tab_type_id_Europack']  = 'DHL, EUROPACK';
 $_['tab_type_id_Europlus']  = 'DHL, EUROPLUS';
@@ -82,6 +81,13 @@ $_['tab_type_id_54']  = 'UPS, Express Plus';
 $_['tab_type_id_65']  = 'UPS, Express Saver';
 $_['tab_type_id_dc']  = 'Fadello';
 $_['tab_type_id_2928']  = 'PostNL, Brievenbuspakje';
+$_['tab_type_id_1'] = 'Intrapost, StandardParcel';
+$_['tab_type_id_2'] = 'Intrapost, InsuredParcel';
+$_['tab_type_id_3'] = 'Intrapost, RegisteredParcel';
+$_['tab_type_id_6'] = 'Intrapost, StandardParcelStatedAddress';
+$_['tab_type_id_7'] = 'Intrapost, StandardParcelStatedAddressSignature';
+$_['tab_type_id_8'] = 'Intrapost, MailboxParcel';
+$_['tab_type_id_9'] = 'Intrapost, ParcelViaPickupLocation';
 
 // Column
 $_['column_general']    = 'General';

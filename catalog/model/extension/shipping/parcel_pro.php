@@ -77,13 +77,8 @@ class ModelExtensionShippingParcelPro extends Model {
 
 
         // PostNL, Pakjegemak
-        if ($this->config->get('parcel_pro_type_id_2928_status') and is_array($this->config->get('parcel_pro_type_id_2928_rule'))) {
-            $quote_data = array_merge($quote_data, $this->getIdQuotes('2928', $language_id, $sub_total, $weight, $customer_geozones));
-        }
-
-        // Intrapost, Pickup Location
-        if ($this->config->get('parcel_pro_type_id_9_status') and is_array($this->config->get('parcel_pro_type_id_9_rule'))) {
-            $quote_data = array_merge($quote_data, $this->getIdQuotes('9', $language_id, $sub_total, $weight, $customer_geozones));
+        if ($this->config->get('parcel_pro_type_id_3533_status') and is_array($this->config->get('parcel_pro_type_id_3533_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('3533', $language_id, $sub_total, $weight, $customer_geozones));
         }
 
         // PostNL, Brievenbuspakje
@@ -204,6 +199,41 @@ class ModelExtensionShippingParcelPro extends Model {
         // PostNL (ex VSP), Brievenbuspakje
         if ($this->config->get('parcel_pro_type_id_2928_status') and is_array($this->config->get('parcel_pro_type_id_2928_rule'))) {
             $quote_data = array_merge($quote_data, $this->getIdQuotes('2928', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+        
+        // Intrapost, StandardParcel;
+        if ($this->config->get('parcel_pro_type_id_1_status') and is_array($this->config->get('parcel_pro_type_id_1_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('1', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+        
+        // Intrapost, InsuredParcel;
+        if ($this->config->get('parcel_pro_type_id_2_status') and is_array($this->config->get('parcel_pro_type_id_2_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('2', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+        
+        // Intrapost, RegisteredParcel;
+        if ($this->config->get('parcel_pro_type_id_3_status') and is_array($this->config->get('parcel_pro_type_id_3_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('3', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+        
+        // Intrapost, StandardParcelStatedAddress;
+        if ($this->config->get('parcel_pro_type_id_6_status') and is_array($this->config->get('parcel_pro_type_id_6_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('6', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+        
+        // Intrapost, StandardParcelStatedAddressSignature;
+        if ($this->config->get('parcel_pro_type_id_7_status') and is_array($this->config->get('parcel_pro_type_id_7_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('7', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+        
+        // Intrapost, MailboxParcel;
+        if ($this->config->get('parcel_pro_type_id_8_status') and is_array($this->config->get('parcel_pro_type_id_8_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('8', $language_id, $sub_total, $weight, $customer_geozones));
+        }
+        
+        // Intrapost, ParcelViaPickupLocation;
+        if ($this->config->get('parcel_pro_type_id_9_status') and is_array($this->config->get('parcel_pro_type_id_9_rule'))) {
+            $quote_data = array_merge($quote_data, $this->getIdQuotes('9', $language_id, $sub_total, $weight, $customer_geozones));
         }
 
 
